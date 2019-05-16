@@ -1,0 +1,56 @@
+{
+	"name": "eslint-config-bscloud",
+	"description": "JavaScript bscloud Style - ESLint bscloud Config",
+	"version": "1.0.1",
+	"bugs": {
+		"url": "https://github.com/amwyygyuge/eslint-config-bscloud"
+	},
+	"dependencies": {
+		"babel-eslint": "^10.0.1",
+		"eslint-plugin-prettier": "^3.1.0",
+		"eslint-plugin-react": "^7.13.0"
+	},
+	"homepage": "https://github.com/amwyygyuge/eslint-config-bscloud",
+	"keywords": [
+		"JavaScript Standard Style",
+		"check",
+		"checker",
+		"code",
+		"code checker",
+		"code linter",
+		"code standards",
+		"code style",
+		"enforce",
+		"eslint",
+		"eslintconfig",
+		"hint",
+		"jscs",
+		"jshint",
+		"lint",
+		"policy",
+		"quality",
+		"simple",
+		"standard",
+		"standard style",
+		"style",
+		"style checker",
+		"style linter",
+		"verify"
+	],
+	"license": "MIT",
+	"main": "index.js",
+	"peerDependencies": {
+		"babel-eslint": "^10.0.1",
+		"eslint": ">=5.0.0",
+		"eslint-plugin-prettier": "^3.1.0",
+		"eslint-plugin-react": "^7.13.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:amwyygyuge/eslint-config-bscloud.git"
+	},
+	"scripts": {
+		"lint": "eslint . --config=eslintrc.json",
+		"test": "npm run lint && tape test/*.js"
+	}
+}
