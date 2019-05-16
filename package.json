@@ -1,12 +1,13 @@
 {
 	"name": "eslint-config-bscloud",
 	"description": "JavaScript bscloud Style - ESLint bscloud Config",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"bugs": {
 		"url": "https://github.com/amwyygyuge/eslint-config-bscloud"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"babel-eslint": "^10.0.1",
+		"eslint": "^5.0.0",
 		"eslint-plugin-prettier": "^3.1.0",
 		"eslint-plugin-react": "^7.13.0"
 	},
