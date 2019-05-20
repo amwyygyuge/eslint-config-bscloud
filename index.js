@@ -1,26 +1,6 @@
 module.exports = {
-	env: {
-		browser: true,
-		commonjs: true,
-		es6: true,
-		node: true
-	},
-	extends: [
-		'eslint:recommended',
-		'prettier',
-		'prettier/babel',
-		'prettier/react',
-		'plugin:react/recommended'
-	],
-	parser: 'babel-eslint',
-	parserOptions: {
-		ecmaFeatures: {
-			jsx: true
-		},
-		ecmaVersion: 2018,
-		sourceType: 'module'
-	},
-	plugins: [ 'react', 'prettier', 'babel' ],
+	extends: [ './base.js', 'prettier', 'prettier/babel' ],
+	plugins: [ 'prettier', 'babel' ],
 	rules: {
 		'babel/camelcase': 1,
 		'no-unused-vars': 'warn',
@@ -56,7 +36,6 @@ module.exports = {
 			'warn',
 			{ object: true, array: true },
 			{ enforceForRenamedProperties: false }
-		],
-		'react/no-deprecated': 'warn'
+		]
 	}
 }
