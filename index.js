@@ -1,8 +1,7 @@
 module.exports = {
-	extends: [ './base.js', 'prettier', 'prettier/babel' ],
-	plugins: [ 'prettier', 'babel' ],
+	extends: [ './base.js', 'prettier' ],
+	plugins: [ 'prettier' ],
 	rules: {
-		'babel/camelcase': 1,
 		'no-unused-vars': 'warn',
 		'prettier/prettier': 'error',
 		'linebreak-style': [ 'error', 'unix' ],
@@ -22,7 +21,7 @@ module.exports = {
 		'no-shadow': 'error',
 		'no-use-before-define': 'warn',
 		'block-spacing': [ 'error', 'always' ],
-		camelcase: [ 'error', { properties: 'always' } ],
+		camelcase: [ 'warn', { properties: 'always' } ],
 		'comma-dangle': [ 'error', 'never' ],
 		'jsx-quotes': [ 'error', 'prefer-double' ],
 		'lines-between-class-members': [ 'error', 'always' ],
@@ -36,6 +35,7 @@ module.exports = {
 			'warn',
 			{ object: true, array: true },
 			{ enforceForRenamedProperties: false }
-		]
+		],
+		'babel/camelcase': 'off'
 	}
 }
