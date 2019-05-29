@@ -8,7 +8,7 @@ module.exports = {
 		'no-console': 'warn',
 		'array-callback-return': 'error',
 		'block-scoped-var': 'error',
-		'class-methods-use-this': 'error',
+		'class-methods-use-this': 'off',
 		'dot-notation': 'error',
 		'no-empty-function': [
 			'error',
